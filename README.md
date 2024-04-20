@@ -3,3 +3,7 @@ This repository has the project files for a tutorial series on Spring Boot avail
 
 ## Checkout the full tutorial here!
 [Spring Boot - making Spring Fun again!](https://springframework.guru/spring-boot-web-application-part-1-spring-initializr/)
+
+Spring boot appp
+
+![spring boot app](https://github.com/sudip243/springbootwebapp/assets/124718557/05d64493-4768-4e7c-94c6-3e7b30f587cb)
