@@ -1,7 +1,6 @@
-FROM openjdk:8-alpine
+FROM khipu/openjdk17-alpine:latest
 RUN apk update && apk add /bin/sh
 RUN mkdir -p /opt/app
-ENV PROJECT_HOME /opt/app
-COPY target/spring-boot-web-0.0.1-SNAPSHOT.jar $PROJECT_HOME/spring-boot-web-0.0.1-SNAPSHOT.jar
-WORKDIR $PROJECT_HOME
-CMD ["java","-jar","/spring-boot-web-0.0.1-SNAPSHOT.jar"]
+COPY target/spring-boot-web-0.0.1-SNAPSHOT.jar /opt/app/spring-boot-web-0.0.1-SNAPSHOT.jar
+WORKDIR /opt/app
+CMD ["java", "-jar", "spring-boot-web-0.0.1-SNAPSHOT.jar"]
